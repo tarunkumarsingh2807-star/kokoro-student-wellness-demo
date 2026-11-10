@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6d5dfc" />
+  <meta name="description" content="KOKORO — AI-assisted student wellness and support platform." />
+  <title>KOKORO — Student Wellness</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="toast" class="toast" role="status"></div>
+  <div id="modal-root"></div>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand" data-page="dashboard">
+        <div class="brand-mark">心</div>
+        <div><strong>KOKORO</strong><span>Student Wellness</span></div>
+      </div>
+      <button class="quick-btn" data-page="mood">＋ Daily check-in</button>
+      <nav class="nav">
+        <p>CORE HUB</p>
+        <button data-page="dashboard" class="nav-item active">⌂ <span>Dashboard</span></button>
+        <button data-page="mood" class="nav-item">☺ <span>Mood Check-in</span></button>
+        <button data-page="analytics" class="nav-item">◒ <span>Mood Analytics</span></button>
+        <button data-page="companion" class="nav-item">✦ <span>AI Companion</span></button>
+        <p>GROWTH</p>
+        <button data-page="wellness" class="nav-item">✧ <span>Daily Wellness</span></button>
+        <button data-page="kaizen" class="nav-item">◎ <span>Kaizen Goals</span></button>
+        <button data-page="ikigai" class="nav-item">✿ <span>Ikigai Reflection</span></button>
+        <button data-page="nature" class="nav-item">♧ <span>Nature Reset</span></button>
+        <button data-page="journal" class="nav-item">▤ <span>Reflections</span></button>
+        <p>SUPPORT</p>
+        <button data-page="support" class="nav-item">♡ <span>Campus Support</span></button>
+        <button data-page="tracker" class="nav-item">◈ <span>Wellness Tracker</span></button>
+        <p>SYSTEM</p>
+        <button data-page="clients" class="nav-item">▦ <span>Clients & SQL</span></button>
+        <button data-page="profile" class="nav-item">◉ <span>My Profile</span></button>
+        <button data-page="privacy" class="nav-item">✓ <span>Privacy & Safety</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="sos-btn" id="sosBtn">⚠ Support now</button>
+        <div class="user-mini"><div class="avatar">T</div><div><b id="sideName">Student</b><span>Personal space</span></div><button id="logoutBtn" title="Reset demo">↪</button></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn mobile-only" id="menuBtn">☰</button>
+        <div><span class="eyebrow" id="pageEyebrow">TODAY · STUDENT WELLNESS</span><h1 id="pageTitle">Good morning 👋</h1></div>
+        <span class="demo-chip">DEMO · SYNTHETIC DATA</span>
+        <div class="top-actions"><button class="icon-btn" id="bellBtn">🔔<i id="bellDot"></i></button><button class="profile-pill" data-page="profile"><span class="avatar small">T</span><span id="topName">Student</span></button></div>
+      </header>
+
+      <section id="page" class="page"></section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
