@@ -26,17 +26,8 @@ The first launch creates `data/kokoro-demo.sqlite` and fills it with fictional s
 - `index.html`, `styles.css`, `app.js` — responsive dashboard and interactions.
 - `data/` — generated SQLite database (ignored by Git).
 
-## Publish to GitHub
+## GitHub repository
 
-Create a new repository, then from this directory run:
-
-```bash
-git init
-git add .
-git commit -m "Build KOKORO wellness dashboard demo"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-git push -u origin main
-```
+Source code: <https://github.com/tarunkumarsingh2807-star/kokoro-student-wellness-demo>
 
 The SQLite database is excluded from Git. This app uses a local Node server and SQLite; GitHub Pages alone cannot host the API/database. To share a live interactive demo, deploy the server to a Node hosting provider and use a persistent private database volume.
